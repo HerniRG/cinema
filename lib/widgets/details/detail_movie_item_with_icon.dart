@@ -1,3 +1,8 @@
+/*
+ * Created by Hernán Rodríguez
+ * Copyright (c) 2023
+ */
+
 import 'package:flutter/material.dart';
 
 // Widget para mostrar un elemento de detalles con un ícono

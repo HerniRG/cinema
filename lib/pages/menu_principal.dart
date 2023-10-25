@@ -1,3 +1,8 @@
+/*
+ * Created by Hernán Rodríguez
+ * Copyright (c) 2023
+ */
+
 import 'package:flutter/material.dart';
 import '../data/user_shared_preferences.dart';
 import '../widgets/menu/menu_movie_list.dart';

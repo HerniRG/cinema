@@ -1,3 +1,8 @@
+/*
+ * Created by Hernán Rodríguez
+ * Copyright (c) 2023
+ */
+
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 

@@ -1,3 +1,8 @@
+/*
+ * Created by Hernán Rodríguez
+ * Copyright (c) 2023
+ */
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 // Clase para manejar el almacenamiento de SharedPreferences para el nombre de usuario

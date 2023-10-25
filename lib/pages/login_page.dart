@@ -1,3 +1,8 @@
+/*
+ * Created by Hernán Rodríguez
+ * Copyright (c) 2023
+ */
+
 import 'package:flutter/material.dart';
 import 'package:hernan_rodriguez_masterd/componets/my_textfield.dart';
 import 'package:hernan_rodriguez_masterd/data/user_shared_preferences.dart';
