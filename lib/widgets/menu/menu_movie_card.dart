@@ -9,7 +9,8 @@ import '../../pages/details_page.dart';
 // Widget para mostrar una tarjeta de película
 Widget movieCard(dynamic movie, context) {
   final title = movie['title'];
-  final stars = movie['vote_average'].toString();
+  final stars = movie['vote_average'].toStringAsFixed(1);
+
   final imageUrl = movie['backdrop_path'] != null
       ? 'https://image.tmdb.org/t/p/w500${movie['backdrop_path']}'
       : 'https://cdn-icons-png.flaticon.com/512/11696/11696725.png';
@@ -75,12 +76,20 @@ Widget movieCard(dynamic movie, context) {
           ),
         ),
         // Muestra la puntuación si está disponible, o se oculta si no hay puntuación
-        stars == '0'
-            ? const SizedBox()
-            : Positioned(
-                top: 15,
-                right: 15,
-                child: Stack(
+        Positioned(
+          top: 15,
+          right: 15,
+          child: stars == '0' || stars == '0.0'
+              ? const Card(
+                  color: Colors.amber,
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      'Sin Valorar',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ))
+              : Stack(
                   alignment: Alignment.center,
                   children: [
                     const Icon(
@@ -98,7 +107,7 @@ Widget movieCard(dynamic movie, context) {
                     ),
                   ],
                 ),
-              )
+        )
       ],
     ),
   );

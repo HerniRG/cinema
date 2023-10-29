@@ -26,7 +26,7 @@ class DetailsPage extends StatelessWidget {
     final releaseDate =
         DateFormat('dd-MM-yyyy').format(DateTime.parse(movie['release_date']));
     final overview = movie['overview'];
-    final voteAverage = movie['vote_average'];
+    final voteAverage = movie['vote_average'].toStringAsFixed(1);
 
     return Scaffold(
       appBar: AppBar(

@@ -19,7 +19,7 @@ Widget detailMovieItemWithIcon(
       children: [
         Icon(icon, color: iconColor), // Icono
         Text(
-          value == "0" ? "Sin valorar" : value, // Valor
+          value == "0" || value == "0.0" ? " Sin valorar" : " $value", // Valor
           style: TextStyle(
               color: Colors.white, fontSize: fontSize, fontWeight: fontWeight),
         ),
