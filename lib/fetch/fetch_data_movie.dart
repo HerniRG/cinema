@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 
 // Función para buscar películas en una categoría específica
 Future<List<dynamic>> fetchMovies(String category) async {
-  const apiKey = '266c1ce9acbc66d3afac9b3815e1b50c';
+  const apiKey = 'TuApiKey';
   const language = 'es-ES';
   const page = 1;
 
